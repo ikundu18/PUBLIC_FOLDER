@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ICRA_IVYUtilities</name>
+    </assembly>
+    <members>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.BuildTableWithintheMarker(IvyPdf.PdfParser,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            With the help of this function you can create a Table within a strat marker and end marker and a marker which should present in that table.
+            </summary>
+            <param name="p"></param>
+            <param name="marker1"></param>
+            <param name="marker2"></param>
+            <param name="marker3"></param>
+            <param name="endMarker"></param>
+            <param name="TextContainsinTablepageForCheckingCorrectTable"></param>
+            <param name="multipage"></param>
+            <param name="rowSeparatedByLine"></param>
+            <param name="HeaderSeparatedByLine"></param>
+            <param name="ColumnsSeparatedByLines"></param>
+            <param name="startPagenoFinding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.BuildGridWithintheMarker(IvyPdf.PdfParser,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+             With the help of this function you can create a Grid within a strat marker and end marker and a marker which should present in that Grid.
+            </summary>
+            <param name="p"></param>
+            <param name="marker1"></param>
+            <param name="marker2"></param>
+            <param name="marker3"></param>
+            <param name="endMarker"></param>
+            <param name="TextContainsinTablepageForCheckingCorrectTable"></param>
+            <param name="multipage"></param>
+            <param name="rowSeparatedByLine"></param>
+            <param name="HeaderSeparatedByLine"></param>
+            <param name="ColumnsSeparatedByLines"></param>
+            <param name="startPagenoFinding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.BuildTableWithInThePageNo(IvyPdf.PdfParser,System.String,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+             With the help of this function you can create a Table within a start Page no. and end Page no.
+            </summary>
+            <param name="p"></param>
+            <param name="marker1"></param>
+            <param name="strtPageNo"></param>
+            <param name="lastPageNo"></param>
+            <param name="rowSeparatedByLine"></param>
+            <param name="HeaderSeparatedByLine"></param>
+            <param name="ColumnsSeparatedByLines"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.BuildGridWithTableStartAndTableEnd(IvyPdf.PdfParser,System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            With the help of this function you can create a Table within Table Start and Table end if header is not present in all table pages and column width is not same for column header as well as table elements.
+            </summary>
+            <param name="p"></param>
+            <param name="marker1"></param>
+            <param name="marker2"></param>
+            <param name="marker3"></param>
+            <param name="tableEndMarker"></param>
+            <param name="HeaderSeparatedByLine"></param>
+            <param name="ColumnsSeparatedByLines"></param>   
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.BuildGridWithTableStartAndTableEnd(IvyPdf.PdfParser,System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            With the help of this function you can create a Table with specific ColumnBorders within the Table Start and Table end if header is not present in all table pages and column width is not same for column header as well as table elements.
+            </summary>
+            <param name="p"></param>
+            <param name="marker1"></param>
+            <param name="marker2"></param>
+            <param name="marker3"></param>
+            <param name="tableEndMarker"></param>
+            <param name="startPagenoFinding"></param>
+            <param name="HeaderSeparatedByLine"></param>
+            <param name="ColumnsSeparatedByLines"></param>
+            <param name="ColumnBorders"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.CaptureMultiPageTable(IvyPdf.PdfParser,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Create a Table which is presnt in more than one page and having same table header - where multipage arrgument not worked
+            </summary>
+            <param name="p"></param>
+            <param name="anymarker"></param>
+            <param name="pagemarker1"></param>
+            <param name="pagemarker2"></param>
+            <param name="endpageMarker"></param>
+            <param name="TextContainsinTablepageForCheckingCorrectTable"></param>
+            <param name="rowSeparatedByLine"></param>
+            <param name="HeaderSeparatedByLine"></param>
+            <param name="ColumnsSeparatedByLines"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.BuildTableWithintheMarkerAndHeaderSpeparatedByLine(IvyPdf.PdfParser,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Create a Table in two part first part is Header and second part is Data. It will used if table has extractd as many null columns with simple Table function.
+            if column width is same for column header as well as table elements then this function will run perfectly.
+            </summary>
+            <param name="p"></param>
+            <param name="marker1"></param>
+            <param name="marker2"></param>
+            <param name="marker3"></param>
+            <param name="endMarker"></param>
+            <param name="columnIndexToDelete"></param>
+            <param name="startPagenoFinding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.BuildMultiPagesTableWithHeaderSpeparatedByLine(IvyPdf.PdfParser,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Create a Table in two part first part is Header and second part is Data. It will used if table has extractd as many null columns with simple Table function.
+            if column width is same for column header as well as table elements then this function will run perfectly. 
+            </summary>
+            <param name="p"></param>
+            <param name="marker1"></param>
+            <param name="marker2"></param>
+            <param name="marker3"></param>
+            <param name="endMarker"></param>
+            <param name="columnIndexToDelete"></param>
+            <param name="startPagenoFinding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.BuildGridWithintheMarkerWithRightSideFilter(IvyPdf.PdfParser,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            With the help of this function you can create a Table within a strat marker and End marker(Y-axis) and also RightSideFilter marker(X-axis).
+            </summary>
+            <param name="p"></param>
+            <param name="marker1"></param>
+            <param name="marker2"></param>
+            <param name="marker3"></param>
+            <param name="endMarker"></param>
+            <param name="rightSideFilterMarker"></param>
+            <param name="side"></param>
+            <param name="startPagenoFinding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.AddTowColumnsValue(System.Data.DataTable,System.String,System.String,System.String)">
+            <summary>
+            Add two columns value to a new given column
+            </summary>
+            <param name="dt"></param>
+            <param name="ColumnName1"></param>
+            <param name="ColumnName2"></param>
+            <param name="NewColumnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.MapAValueToDataTable(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            Map a value to a DataTable with create a new column
+            </summary>
+            <param name="dt"></param>
+            <param name="columnNameToBeAdded"></param>
+            <param name="mappingvalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.removeEmptyRows(System.Data.DataTable)">
+            <summary>
+            Remove empty Rows from a DataTable
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.removeBlankColumns(System.Data.DataTable)">
+            <summary>
+            Remove blank column from a DataTable
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.trimData(System.Data.DataTable)">
+            <summary>
+            Remove space from start and end of the cell of entire DataTable
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.EndTheTableWithEndToken(System.Data.DataTable,System.String,System.Int32)">
+            <summary>
+            End/Terminate The DataTable With perticular Text in given column index.
+            </summary>
+            <param name="dt"></param>
+            <param name="endingToken"></param>
+            <param name="endingTokenColumnsIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.EndTheTableWithEndToken(System.Data.DataTable,System.String)">
+            <summary>
+             End/Terminate The DataTable With perticular Text .
+            </summary>
+            <param name="dt"></param>
+            <param name="endingToken"></param>in any column
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.MapReportedValueToDataTable(System.Data.DataTable,System.String)">
+            <summary>
+            Map Reported value to all rows in the DataTable like security type in SCDO till next occurance
+            </summary>
+            <param name="dt"></param>
+            <param name="columnNameToBeAdded"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.StratAndEndTheDataTableWithText(System.Data.DataTable,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            Capture Data block from a Whole DataTable with start Text and End Text
+            </summary>
+            <param name="dt"></param>
+            <param name="stratToken"></param>
+            <param name="stratTokenColumnsIndex"></param>
+            <param name="endingToken"></param>
+            <param name="endingTokenColumnsIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.ConcatenateAllRightTextToString(IvyPdf.PdfParser)">
+            <summary>
+            Concatenate all Right text to the string from a current token
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.RemoveDuplicateRows(System.Data.DataTable,System.String)">
+            <summary>
+            Delete Duplicate rows of a DataTable with specific Column name
+            </summary>
+            <param name="dt"></param>
+            <param name="ColumnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.MapReportedValueToDataTableInReportedColumn(System.Data.DataTable,System.String,System.String,System.String)">
+            <summary>
+            Map Reported three columns to all rows in the DataTable like Country name and country_rating and sp_counry_rating in SCDO till next occurance
+            </summary>
+            <param name="dt"></param>
+            <param name="firstMapValCol"></param>
+            <param name="secondMapValCol"></param>
+            <param name="thirdMapValCol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.RollupBasedonIndustryCode(System.Data.DataTable,System.String,System.String,System.String)">
+            <summary>
+            Rollup a table based on industry name if industry code is present
+            </summary>
+            <param name="dt"></param>
+            <param name="MoodyIndColumnName"></param>
+            <param name="SPIndColumnName"></param>
+            <param name="FitchIndColumnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.SpliDataRowsToMultiple(System.Data.DataTable,System.Data.DataTable,IvyPdf.PdfParser)">
+            <summary>
+            Split DataRows(sourceDataTable) of DataTable into mutiple based on another table that is issuer name Table(mainDataTable).
+            </summary>
+            <param name="sourceDataTable"></param>
+            <param name="mainDataTable"></param>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.industryLookup(System.Data.DataTable,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            If any industry has not captured correctly then you use this function to lookup correct industry from that table(sourceDataTable)..
+            </summary>
+            <param name="sourceDataTable"></param>
+            <param name="industry_name"></param>
+            <param name="sp_industry"></param>
+            <param name="fitch_industry"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICRA_IVYUtilities.IVYUtilities.CheckNullTablesOfTemplate(IvyPdf.PdfParser,System.String,System.String)">
+            <summary>
+            Check whether a Template has a Null Table or Not Null Table ,pass the parameter only for Parent TemplateName Name as TemplateName and filename is update TL path which captured automatically
+            </summary>
+            <param name="p"></param>
+            <param name="TemplateName"></param>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
