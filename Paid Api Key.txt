@@ -1,0 +1,1 @@
+$env:GEMINI_API_KEY="AIzaSyDKrT0vNjnTnJHdDW4mzIUTY-bTsHzy9DQ"
